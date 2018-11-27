@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--因为在applicationContext.xml的"mapperLocations" 写的是BookMapper.xml的路径，因此这个文件可有可无-->
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias alias="Book" type="com.huaxia.demo.model.Book"/>
+    </typeAliases>
+    <mappers>
+        <mapper resource="com/huaxia/demo/mapper/BookMapper.xml" />
+    </mappers>
+</configuration>
